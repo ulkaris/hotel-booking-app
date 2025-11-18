@@ -1,16 +1,12 @@
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import InitialConfigurationForm from "./components/Forms/İnitialConfigurationForm";
+import BookingProvider from "./context/BookingProvider";
+import Home from "./views/Home";
 
 function App() {
   return (
     <>
-      <div className="container">
-        <Header />
-        <InitialConfigurationForm />
-        <Footer />
-      </div>
+      <BookingProvider>
+        <Home />
+      </BookingProvider>
     </>
   );
 }

@@ -5,6 +5,8 @@ import logo from "../../assets/images/logo.png";
 import Select from "../Inputs/Select";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
+// import { useContext } from "react";
+// import { BookingContext } from "../../context/BookingContext";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,6 +16,14 @@ const Header = () => {
     { value: "flights", label: "Flights" },
     { value: "cars", label: "Cars" },
   ];
+
+  // const { initialConfig, dailySelections, totalPrice } =
+  //   useContext(BookingContext);
+  // console.log(initialConfig.citizenship);
+  // console.log(initialConfig.destination);
+  // console.log(initialConfig.startDate);
+  // console.log(initialConfig.numberOfDays);
+  // console.log(initialConfig.boardType);
 
   //   const handleChange = (selected) => {
   //     console.log("Selected value:", selected?.value);

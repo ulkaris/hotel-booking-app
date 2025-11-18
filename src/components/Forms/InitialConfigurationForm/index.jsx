@@ -5,6 +5,9 @@ import styles from "./index.module.css";
 import countries from "../../../data/country.json";
 import boardTypes from "../../../data/boardType.json";
 
+import { useContext } from "react";
+import { BookingContext } from "../../../context/BookingContext";
+
 const schema = Yup.object().shape({
   citizenship: Yup.string().required("Please select your citizenship"),
   startDate: Yup.date().required("Start date is required").nullable(),
@@ -18,6 +21,8 @@ const schema = Yup.object().shape({
 
 const InitialConfigurationForm = () => {
   const today = new Date().toISOString().split("T")[0];
+  const { setInitialConfig, setIsInitialSubmitted } =
+    useContext(BookingContext);
 
   const initialValues = {
     citizenship: "",
@@ -28,7 +33,9 @@ const InitialConfigurationForm = () => {
   };
 
   const handleSubmit = (values) => {
+    setInitialConfig(values);
     console.log("Form submitted with values:", values);
+    setIsInitialSubmitted(true);
   };
 
   return (
