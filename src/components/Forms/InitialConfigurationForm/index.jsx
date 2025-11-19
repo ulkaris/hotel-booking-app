@@ -34,7 +34,7 @@ const InitialConfigurationForm = () => {
 
   const handleSubmit = (values) => {
     setInitialConfig(values);
-    console.log("Form submitted with values:", values);
+    // console.log("Form submitted with values:", values);
     setIsInitialSubmitted(true);
   };
 

@@ -1,0 +1,68 @@
+.summary_container {
+  margin: 40px 80px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.06);
+  font-family: Inter, system-ui, sans-serif;
+}
+
+.summary_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 28px;
+  color: #111;
+}
+
+.section {
+  margin-bottom: 24px;
+}
+
+.section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.section p {
+  margin: 6px 0;
+  font-size: 15px;
+  color: #444;
+}
+
+.dayCard {
+  padding: 16px 18px;
+  border-radius: 12px;
+  background: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  margin-bottom: 14px;
+}
+
+.totalBox {
+  background: #f3f9f4;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(0, 140, 50, 0.15);
+}
+
+.total {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1c7d32;
+}
+
+@media (max-width: 992px) {
+  .summary_container {
+    margin: 30px 16px;
+  }
+  .summary_grid {
+    grid-template-columns: 1fr;
+  }
+}

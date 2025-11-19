@@ -13,6 +13,7 @@ const BookingProvider = ({ children }) => {
   const [dailySelections, setDailySelections] = useState([]);
   const [totalPrice, setTotalPrice] = useState(0);
   const [isInitialSubmitted, setIsInitialSubmitted] = useState(false);
+  const [isDailySubmitted, setIsDailySubmitted] = useState(false);
 
   const value = {
     initialConfig,
@@ -23,6 +24,8 @@ const BookingProvider = ({ children }) => {
     setTotalPrice,
     isInitialSubmitted,
     setIsInitialSubmitted,
+    isDailySubmitted,
+    setIsDailySubmitted,
   };
 
   return (
