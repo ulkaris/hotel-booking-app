@@ -58,11 +58,33 @@
   color: #1c7d32;
 }
 
+.pdf_btn {
+  padding: 12px 22px;
+  background: #1c7d32;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin: 10px 80px 40px 80px;
+  max-width: max-content;
+}
+
+.pdf_btn:hover {
+  background: #166428;
+}
+
 @media (max-width: 992px) {
   .summary_container {
     margin: 30px 16px;
   }
   .summary_grid {
     grid-template-columns: 1fr;
+  }
+
+  .pdf_btn {
+    margin: 0px 16px 40px 16px;
+    max-width: none;
   }
 }
